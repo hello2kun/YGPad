@@ -238,8 +238,8 @@ behaviors {
 */ disable taps
 
 //Ecnoder
-sensor-bindings = <&encoder C_VOL_UP C_VOL_DN>;
-//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+//sensor-bindings = <&encoder C_VOL_UP C_VOL_DN>;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
 combos
 {
