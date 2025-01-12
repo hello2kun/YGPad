@@ -237,19 +237,32 @@ behaviors {
        };
 */ disable taps
 
-//Ecnoder
+//Encoder
+
+/*
 behaviors
 {
-    encoder: encoder 
+    encoder: encoder
     {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&kp C_VOL_UP>, <&kp C_VOL_DOWN>;
     };
 };
+*/
+
+behaviors
+{
+    rot_kp: sensor_rotate_kp
+    {
+        compatible = "zmk,behavior-sensor-rotate-var";
+        #sensor-binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+    };
+};
 
 //sensor-bindings = <&encoder C_VOL_UP C_VOL_DN>;
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
 combos
 {
@@ -577,6 +590,12 @@ keymap
 {
 compatible = "zmk,keymap";
 
+base
+{
+    //sensor-bindings = <&encoder>;
+    sensor-bindings = <&rot_kp PG_UP PG_DN>;
+}
+
 // 6 Col / 5 row
 default_layer 
 {
@@ -614,12 +633,5 @@ bindings = <
 &trans      &setBT3           &setBT4   &trans        &trans    &trans
 >;
 }; //Layer2 end
-
-base
-{
-    sensor-bindings = <&encoder>;
-}
-
-
     }; //Keymap End
 }; 
