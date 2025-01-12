@@ -14,13 +14,12 @@ pin matrix changed
 #define DEFAULT_LAYER 0
 #define LAYER1 1
 #define LAYER2 2
-#define LAYER3 3
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
 
 / {
-
+//Key Input
 behaviors {
     lt: layer_tap {
         compatible = "zmk,behavior-hold-tap";
@@ -75,6 +74,7 @@ behaviors {
         };
     };
 
+/* Tap Mode
 behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -235,19 +235,15 @@ behaviors {
             bindings = <&kp EQUAL>, <&kp RPAR>;
             };
        };
+*/ disable taps
 
-/*
-conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <0 1>;
-            then-layer = <4>;
-        };
-    };
-*/
+//Ecnoder
+sensor-bindings = <inc_dec_kp C_VOL_UP C_VOL_DN>;
+
 
 combos
 {
+/*
         compatible = "zmk,combos";
         combo_tab {
             timeout-ms = <50>;
@@ -411,30 +407,30 @@ combos
             bindings = <&kp EQUAL>;
             };
 
-
-        combo_gamemode {
-            timeout-ms = <50>;
-            key-positions = <0 36 54>;
-            bindings = <&tog GAMELAYER>;
-            };
-
-
         combo_TaskManager {
             timeout-ms = <50>;
             key-positions = <36 38 54>;
             bindings = <&mcrTaskManager>;
             };
+*/
 
 }; //end combo
 
 macros
 {
-      mcr1: mcr1
-      {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kp H &kp E &kp L &kp L &kp O &kp N2 &kp K &kp U &kp N>;
-      };
+    mcr00: mcr00
+    {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&macro_tap &kp KP_N0 &kp KP_N0>;
+    };
+
+    mcr1: mcr1
+    {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&macro_tap &kp H &kp E &kp L &kp L &kp O &kp N2 &kp K &kp U &kp N>;
+    };
 
       mcr2: mcr2 
       {
@@ -572,54 +568,44 @@ keymap
 {
 compatible = "zmk,keymap";
 
-    default_layer 
-    {
-    bindings = <
-//C0                 C1                  C2                    C3             C4                  C5                C6                C7               C8               C9               C10        C11              
-//&gresc             &td0                &td1                  &td2           &td3                &td4              &td5              &td6             &td7             &td8             &td9       &td10   
-&kp ESC              &kp Q               &kp W                 &kp E          &kp R               &kp T             &kp Y             &kp U            &kp I            &kp O            &kp P      &kp LBKT    
-&kp BSPC             &kp A               &kp S                 &kp D          &kp F               &kp G             &kp H             &kp J            &kp K            &kp L            &kp SEMI   &kp APOS   
-&kp LSHFT            &kp Z               &kp X                 &kp C          &kp V               &kp B             &kp N             &kp M            &kp COMMA        &kp DOT          &kp FSLH   &kp UP     
-&kp LCTRL            &kp LGUI            &kp LALT              &lt LAYER2 RET &bhmQck LCTRL MINUS &bhmQck LALT PLUS &lt LAYER1 STAR   &lt LAYER2 FSLH  &lt LAYER2 RALT  &lt LAYER1 RALT  &kp LEFT   &kp DOWN   
-&htQck LSHIFT SPACE  &lt LAYER1 SPACE    &htQck LSHIFT SPACE   &kp RIGHT      &kp RSHFT           &kp RET           &kp BSPC          &kp RBKT
-            >;
-        };
+// 6 Col / 5 row
+default_layer 
+{
+bindings = <
+//C0                 C1               C2              C3             C4                    C5            
+&kp C_PP             C_MUTE           &kp ESC         &kp BSPC       &trans                &trans
+&kp KP_MULTIPLY      &kp N7           &kp N8          &kp KP_N9      &trans                &trans
+&kp KP_SLASH         &kp N4           &kp N5          &kp KP_N6      &trans                &trans       
+&kp KP_PLUS          &kp N4           &kp N5          &kp KP_N6      &trans                &trans    
+&kp KP_MINUS         &kp N0           &mcr00          &kp KP_DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
+ >;
+};
 // 
-    layer1 
-    {
-    bindings = <
-//C0        C1         C2        C3        C4         C5         C6         C7        C8            C9        C10        C11          
-&kp TILDE   &td0       &td1      &td2      &td3       &td4       &td5       &td6      &td7          &td8      &td9       &td10 
-&kp DEL     &td3       &td4      &td5      &td13      &td11      &td15      &trans    &trans        &trans    &kp COLON  &kp DQT
-&trans      &td6       &td7      &td8      &td9       &td10      &td14      &trans    &kp LT        &kp GT    &kp QMARK  &kp PG_UP    
-&kp LBKT    &trans     &kp RBKT  &trans    &kp LPAR   &kp RPAR   &kp LBRC   &kp RBRC  &trans        &kp RCTRL &kp HOME   &kp PG_DN 
-&trans      &trans     &trans    &kp END   &trans     &trans     &kp DEL    &td11
-            >;
-        };
 
-    layer2 
-    {
-    bindings = <
-//C0       C1           C2        C3              C4             C5              C6           C7             C8          C9             C10              C11              
-&kp GRAVE  &kp F1       &kp F2    &kp F3          &kp F4         &kp F5          &kp F6       &kp F7         &kp F8      &kp F9         &kp F10          &kp F11     
-&kp CAPS   &mcr1        &mcr2     &mcr3           &mcr4          &mcr5           &mcr6        &mcr7          &mcr8       &trans         &trans           &kp INS 
-&mo LAYER3 &trans       &trans    &trans          &trans         &trans          &trans       &trans         &mkp LCLK   &mkp MCLK      &mkp RCLK        &mmv MOVE_UP
-&trans     &trans       &trans    &trans          &msc SCRL_LEFT &msc SCRL_RIGHT &msc SCRL_UP &msc SCRL_DOWN &trans      &kp LANG2      &mmv MOVE_LEFT   &mmv MOVE_DOWN 
-&trans     &trans       &trans    &mmv MOVE_RIGHT &trans         &kp PSCRN       &kp BSLH     &kp F12
-            >;
-        }; //Layer2 end
+layer1 
+{
+bindings = <
+//C0        C1         C2        C3        C4         C5   
+&trans     &trans       &trans     &trans        &trans    &trans 
+&trans     &kp HOME     &kp UP     &kp END       &trans    &trans  
+&trans     &kp LEFT     &kp DOWN   &kp RIGHT     &trans    &trans       
+&trans     &trans       &trans     &trans        &trans    &trans
+&trans     &trans       &trans     &trans        &trans    &trans
+>;
+};
 
-    layer3 
-    {
-    bindings = <
-//C0       C1        C2              C3           C4        C5        C6           C7              C8              C9              C10            C11              
-&trans     &setBT0   &setBT1         &setBT2      &setBT3   &setBT4   &out OUT_TOG &trans          &trans          &trans          &bt BT_PRV     &trans  
-&trans     &trans    &trans          &trans       &trans    &trans    &trans       &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
-&trans     &trans    &trans          &trans       &trans    &trans    &trans       &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
-&trans     &trans    &trans          &trans       &trans    &trans    &trans       &trans          &trans          &trans          &kp C_BRI_DN   &kp C_VOL_DN 
-&trans     &trans    &trans          &kp C_BRI_UP &kp C_PP  &trans     &trans      &bt BT_NXT
-            >;
-        }; //Layer3 end
+layer2 
+{
+bindings = <
+//C0        C1                C2         C3           C4        C5              
+&bt BT_CLR  &out OUT_TOG      &trans    &trans        &trans    &trans
+&trans      &trans            &trans    &trans        &trans    &trans
+&trans      &kp C_BRI_DOWN    &trans    &kp C_BRI_UP  &trans    &trans
+&trans      &setBT0           &setBT1   &setBT2       &trans    &trans
+&trans      &setBT3           &setBT4   &trans        &trans    &trans
+>;
+}; //Layer2 end
+
 
     }; //Keymap End
 }; 
