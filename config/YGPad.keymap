@@ -243,14 +243,14 @@ sensor-bindings = <inc_dec_kp C_VOL_UP C_VOL_DN>;
 
 combos
 {
-/*
         compatible = "zmk,combos";
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <0 12>;
+            key-positions = <1 2>;
             bindings = <&kp TAB>;
             };
 
+/*
          combo_tilde {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -413,7 +413,6 @@ combos
             bindings = <&mcrTaskManager>;
             };
 */
-
 }; //end combo
 
 macros
@@ -572,12 +571,12 @@ compatible = "zmk,keymap";
 default_layer 
 {
 bindings = <
-//C0                 C1               C2              C3             C4                    C5            
-&kp C_PP             C_MUTE           &kp ESC         &kp BSPC       &trans                &trans
-&kp KP_MULTIPLY      &kp N7           &kp N8          &kp KP_N9      &trans                &trans
-&kp KP_SLASH         &kp N4           &kp N5          &kp KP_N6      &trans                &trans       
-&kp KP_PLUS          &kp N4           &kp N5          &kp KP_N6      &trans                &trans    
-&kp KP_MINUS         &kp N0           &mcr00          &kp KP_DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
+//C0              C1               C2              C3          C4                    C5            
+&kp C_PP          &kp C_MUTE       &kp ESC         &kp BSPC    &trans                &trans
+&kp MULTIPLY      &kp N7           &kp N8          &kp N9      &trans                &trans
+&kp SLASH         &kp N4           &kp N5          &kp N6      &trans                &trans       
+&kp PLUS          &kp N4           &kp N5          &kp N6      &trans                &trans    
+&kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
  >;
 };
 // 
