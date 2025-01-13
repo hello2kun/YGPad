@@ -74,7 +74,6 @@ behaviors {
         };
     };
 
-/* Tap Mode
 behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -235,10 +234,8 @@ behaviors {
             bindings = <&kp EQUAL>, <&kp RPAR>;
             };
        };
-*/ disable taps
 
 //Encoder
-
 /*
 behaviors
 {
@@ -273,7 +270,7 @@ combos
             bindings = <&kp TAB>;
             };
 
-/*
+/* //Disable Combos
          combo_tilde {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -610,7 +607,7 @@ bindings = <
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
  >;
 
-senor-bidings = <&rot_kp PG_UP PG_DN>;
+senor-bidings = <&rot_kp C_VOL_UP C_VOL_DOWN>;
 };
 // 
 
@@ -624,6 +621,7 @@ bindings = <
 &trans     &trans       &trans     &trans        &trans    &trans
 &trans     &trans       &trans     &trans        &trans    &trans
 >;
+senor-bidings = <&rot_kp PG_UP PG_DN>;
 };
 
 layer2 
@@ -636,6 +634,8 @@ bindings = <
 &trans      &setBT0           &setBT1   &setBT2       &trans    &trans
 &trans      &setBT3           &setBT4   &trans        &trans    &trans
 >;
+senor-bidings = <&rot_kp PG_UP PG_DN>;
 }; //Layer2 end
-    }; //Keymap End
+
+}; //Keymap End
 }; 
