@@ -607,7 +607,7 @@ bindings = <
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
  >;
 
-senor-bidings = <&rot_kp C_VOL_UP C_VOL_DOWN>;
+sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DOWN>;
 };
 // 
 
@@ -621,7 +621,7 @@ bindings = <
 &trans     &trans       &trans     &trans        &trans    &trans
 &trans     &trans       &trans     &trans        &trans    &trans
 >;
-senor-bidings = <&rot_kp PG_UP PG_DN>;
+sensor-bindings = <&rot_kp PG_UP PG_DN>;
 };
 
 layer2 
@@ -634,7 +634,7 @@ bindings = <
 &trans      &setBT0           &setBT1   &setBT2       &trans    &trans
 &trans      &setBT3           &setBT4   &trans        &trans    &trans
 >;
-senor-bidings = <&rot_kp PG_UP PG_DN>;
+sensor-bindings = <&rot_kp PG_UP PG_DN>;
 }; //Layer2 end
 
 }; //Keymap End
