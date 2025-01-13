@@ -19,7 +19,6 @@ pin matrix changed
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
 
 / {
-//Key Input
 behaviors {
     lt: layer_tap {
         compatible = "zmk,behavior-hold-tap";
@@ -172,6 +171,7 @@ behaviors {
             bindings = <&kp MINUS>, <&kp UNDER>;
             };
        };
+
 behaviors {
         td11: tap_dance_11 {
             compatible = "zmk,behavior-tap-dance";
@@ -208,6 +208,7 @@ behaviors {
             };
 
        };
+
 behaviors {
         td15: tap_dance_15 {
             compatible = "zmk,behavior-tap-dance";
@@ -235,7 +236,7 @@ behaviors {
             };
        };
 
-//Encoder
+//------------------------------------Encoder
 /*
 behaviors
 {
@@ -258,8 +259,10 @@ behaviors
     };
 };
 
-//sensor-bindings = <&encoder C_VOL_UP C_VOL_DN>;
-//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+//------------------------------------Encoder End
+
+
+
 
 combos
 {
@@ -587,14 +590,6 @@ keymap
 {
 compatible = "zmk,keymap";
 
-/*
-base
-{
-    //sensor-bindings = <&encoder>;
-    sensor-bindings = <&rot_kp PG_UP PG_DN>;
-}
-*/
-
 // 6 Col / 5 row
 default_layer 
 {
@@ -606,10 +601,8 @@ bindings = <
 &kp PLUS          &kp N4           &kp N5          &kp N6      &trans                &trans    
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
  >;
-
 sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DOWN>;
 };
-// 
 
 layer1 
 {
