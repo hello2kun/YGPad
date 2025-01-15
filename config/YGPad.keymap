@@ -247,7 +247,7 @@ behaviors
         bindings = <&kp C_VOL_UP>, <&kp C_VOL_DOWN>;
     };
 };
-*/
+
 
 behaviors
 {
@@ -258,7 +258,7 @@ behaviors
         bindings = <&kp>, <&kp>;
     };
 };
-
+*/
 //------------------------------------Encoder End
 
 
@@ -601,7 +601,7 @@ bindings = <
 &kp PLUS          &kp N4           &kp N5          &kp N6      &trans                &trans    
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
  >;
-sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DOWN>;
+//sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DOWN>;
 };
 
 layer1 
@@ -614,7 +614,7 @@ bindings = <
 &trans     &trans       &trans     &trans        &trans    &trans
 &trans     &trans       &trans     &trans        &trans    &trans
 >;
-sensor-bindings = <&rot_kp PG_UP PG_DN>;
+//sensor-bindings = <&rot_kp PG_UP PG_DN>;
 };
 
 layer2 
@@ -627,7 +627,7 @@ bindings = <
 &trans      &setBT0           &setBT1   &setBT2       &trans    &trans
 &trans      &setBT3           &setBT4   &trans        &trans    &trans
 >;
-sensor-bindings = <&rot_kp PG_UP PG_DN>;
+//sensor-bindings = <&rot_kp PG_UP PG_DN>;
 }; //Layer2 end
 
 }; //Keymap End
