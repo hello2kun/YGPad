@@ -15,8 +15,8 @@ pin matrix changed
 #define LAYER1 1
 #define LAYER2 2
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 / {
 
@@ -626,7 +626,7 @@ bindings = <
 //C0        C1                C2         C3           C4        C5              
 &bt BT_CLR  &out OUT_TOG      &trans    &trans        &trans    &trans
 &trans      &trans            &trans    &trans        &trans    &trans
-&trans      &kp C_BRI_DOWN    &trans    &kp C_BRI_UP  &trans    &trans
+&trans      &kp C_BRI_DN      &trans    &kp C_BRI_UP  &trans    &trans
 &trans      &setBT0           &setBT1   &setBT2       &trans    &trans
 &trans      &setBT3           &setBT4   &trans        &trans    &trans
 >;
