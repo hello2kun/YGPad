@@ -604,7 +604,7 @@ default_layer
 &kp PLUS          &kp N4           &kp N5          &kp N6      &trans                &trans    
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
  >;
-sensor-bindings = <&inc_dec_kp  C_VOL_UP C_VOL_DOWN>;
+sensor-bindings = <&inc_dec_kp  C_VOL_UP C_VOL_DN>;
 };
 
 layer1 
