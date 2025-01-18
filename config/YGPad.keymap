@@ -240,18 +240,27 @@ behaviors {
        };
 
 //------------------------------------Encoder
-/*
 behaviors
 {
-    encoder: encoder
+    encoder : sensor_rotate_kp
     {
         compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&kp C_VOL_UP>, <&kp C_VOL_DOWN>;
+        #sensor-binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
     };
 };
 
+behaviors
+{
+    Mouse_encoder : sensor_rotate_kp
+    {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <2>;
+        bindings = <&msc>, <&msc>;
+    };
+};
 
+/*
 behaviors
 {
     rot_kp: sensor_rotate_kp
@@ -604,7 +613,7 @@ default_layer
 &kp PLUS          &kp N4           &kp N5          &kp N6      &trans                &trans    
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
  >;
-sensor-bindings = <&inc_dec_kp  C_VOL_UP C_VOL_DN>;
+sensor-bindings = <&encoder C_VOL_UP C_VOL_DN>;
 };
 
 layer1 
@@ -617,7 +626,7 @@ bindings = <
 &trans     &trans       &trans     &trans        &trans    &trans
 &trans     &trans       &trans     &trans        &trans    &trans
 >;
-sensor-bindings = <&inc_dec_kp  PG_UP PG_DN>;
+sensor-bindings = <&Mouse_encoder SCRL_UP SCRL_DOWN>;
 };
 
 layer2 
@@ -630,7 +639,7 @@ bindings = <
 &trans      &setBT0           &setBT1   &setBT2       &trans    &trans
 &trans      &setBT3           &setBT4   &trans        &trans    &trans
 >;
-sensor-bindings = <&inc_dec_kp  PG_UP PG_DN>;
+sensor-bindings = <&encoder PG_UP PG_DN>;
 }; //Layer2 end
 
 }; //Keymap End
