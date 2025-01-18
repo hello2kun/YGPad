@@ -242,7 +242,7 @@ behaviors {
 //------------------------------------Encoder
 behaviors
 {
-    encoder_kp : sensor_rotate_kp
+    encoder_kp : sensors
     {
         compatible = "zmk,behavior-sensor-rotate-var";
         #sensor-binding-cells = <2>;
