@@ -241,6 +241,7 @@ behaviors {
 
 //------------------------------------Encoder
 
+/*
 behaviors {
     encoder_kp : sensor_rotate_kp
     {
@@ -249,6 +250,7 @@ behaviors {
         bindings = <&kp>, <&kp>;
     };
 };
+*/
 
 //------------------------------------Encoder End
 
