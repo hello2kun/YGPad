@@ -250,6 +250,7 @@ behaviors
     };
 };
 
+/*
 behaviors
 {
     Mouse_encoder : sensor_rotate_mouse
@@ -259,6 +260,7 @@ behaviors
         bindings = <&msc>, <&msc>;
     };
 };
+*/
 
 /*
 behaviors
