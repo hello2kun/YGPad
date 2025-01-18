@@ -242,9 +242,9 @@ behaviors {
 //------------------------------------Encoder
 behaviors
 {
-    encoder : sensor_rotate_kp
+    encoder_kp : sensor_rotate_kp
     {
-        compatible = "zmk,behavior-sensor-rotate";
+        compatible = "zmk,behavior-sensor-rotate-var";
         #sensor-binding-cells = <2>;
         bindings = <&kp>, <&kp>;
     };
@@ -273,10 +273,8 @@ behaviors
     };
 };
 */
+
 //------------------------------------Encoder End
-
-
-
 
 combos
 {
@@ -615,7 +613,7 @@ default_layer
 &kp PLUS          &kp N4           &kp N5          &kp N6      &trans                &trans    
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE 
  >;
-sensor-bindings = <&encoder C_VOL_UP C_VOL_DN>;
+sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
 };
 
 layer1 
@@ -628,7 +626,7 @@ bindings = <
 &trans     &trans       &trans     &trans        &trans    &trans
 &trans     &trans       &trans     &trans        &trans    &trans
 >;
-sensor-bindings = <&encoder PG_UP PG_DN>;
+sensor-bindings = <&encoder_kp PG_UP PG_DN>;
 };
 
 layer2 
@@ -641,7 +639,7 @@ bindings = <
 &trans      &setBT0           &setBT1   &setBT2       &trans    &trans
 &trans      &setBT3           &setBT4   &trans        &trans    &trans
 >;
-sensor-bindings = <&encoder PG_UP PG_DN>;
+sensor-bindings = <&encoder_kp PG_UP PG_DN>;
 }; //Layer2 end
 
 }; //Keymap End
