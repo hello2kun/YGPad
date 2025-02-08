@@ -603,7 +603,7 @@ keymap
 &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
+        //sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
     };
 
 
@@ -626,7 +626,7 @@ keymap
 &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
+        //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
     };
 
     layer2 
@@ -647,7 +647,7 @@ keymap
 &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
+        //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
         }; //Layer2 end
 
     }; //Keymap End
