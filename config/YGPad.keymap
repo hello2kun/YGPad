@@ -597,11 +597,11 @@ keymap
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE
 */
 
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans  
+&trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
     };
@@ -619,11 +619,12 @@ keymap
 &trans     &trans       &trans     &trans      &trans    
 &trans     &trans       &trans     &trans      &trans    &trans
 */
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
+
+&trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans  
+&trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
     };
@@ -639,15 +640,15 @@ keymap
 &trans      &setBT0           &setBT1   &setBT2       &trans   
 &trans      &setBT3           &setBT4   &trans        &trans    &trans   
 */
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
+
+&trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans  
+&trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
-    }; //Layer2 end
+        }; //Layer2 end
 
-}; //Keymap End
-
+    }; //Keymap End
 }; //All End
