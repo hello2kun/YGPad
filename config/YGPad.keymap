@@ -15,8 +15,8 @@ pin matrix changed
 #define LAYER1 1
 #define LAYER2 2
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600 Mouse Movement
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
 
 / {
 
@@ -258,39 +258,39 @@ behaviors {
 
 combos
 {
-        compatible = "zmk,combos";
+    compatible = "zmk,combos";
 
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp TAB>;
-            };
+    combo_tab {
+    timeout-ms = <50>;
+    key-positions = <1 2>;
+    bindings = <&kp TAB>;
+    };
 
-/* 
-//Disable Combos
-         combo_tilde {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp TILDE>;
-            };
+    /* 
+    //Disable Combos
+    combo_tilde {
+    timeout-ms = <50>;
+    key-positions = <0 1>;
+    bindings = <&kp TILDE>;
+    };
 
-        combo_1 {
-            timeout-ms = <50>;
-            key-positions = <1 13>;
-            bindings = <&kp N1>;
-            };
+    combo_1 {
+    timeout-ms = <50>;
+    key-positions = <1 13>;
+    bindings = <&kp N1>;
+    };
 
-        combo_2 {
-            timeout-ms = <50>;
-            key-positions = <2 14>;
-            bindings = <&kp N2>;
-            };
+    combo_2 {
+    timeout-ms = <50>;
+    key-positions = <2 14>;
+    bindings = <&kp N2>;
+    };
 
-        combo_3 {
-            timeout-ms = <50>;
-            key-positions = <3 15>;
-            bindings = <&kp N3>;
-            };
+    combo_3 {
+    timeout-ms = <50>;
+    key-positions = <3 15>;
+    bindings = <&kp N3>;
+    };
 
         combo_4 {
             timeout-ms = <50>;
@@ -425,11 +425,11 @@ combos
             };
 
         combo_TaskManager {
-            timeout-ms = <50>;
-            key-positions = <36 38 54>;
-            bindings = <&mcrTaskManager>;
-            };
-*/
+        timeout-ms = <50>;
+        key-positions = <36 38 54>;
+        bindings = <&mcrTaskManager>;
+        };
+    */
 
 }; //end combo
 
@@ -597,11 +597,11 @@ keymap
 &kp MINUS         &kp N0           &mcr00          &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE
 */
 
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
     };
@@ -619,11 +619,11 @@ keymap
 &trans     &trans       &trans     &trans      &trans    
 &trans     &trans       &trans     &trans      &trans    &trans
 */
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
     };
@@ -639,14 +639,15 @@ keymap
 &trans      &setBT0           &setBT1   &setBT2       &trans   
 &trans      &setBT3           &setBT4   &trans        &trans    &trans   
 */
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
-    };
+    }; //Layer2 end
+
 }; //Keymap End
 
-}; 
+}; //All End
