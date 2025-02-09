@@ -15,8 +15,8 @@ pin matrix changed
 #define LAYER1 1
 #define LAYER2 2
 
-//#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600 Mouse Movement
-//#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 / {
 
@@ -258,8 +258,6 @@ behaviors {
 
 combos
 {
-
-/*
     compatible = "zmk,combos";
 
     combo_tab {
@@ -430,14 +428,11 @@ combos
         key-positions = <36 38 54>;
         bindings = <&mcrTaskManager>;
         };
-*/
 
 }; //end combo
 
 macros
 {
-
-/*
     mcr00: mcr00
     {
         compatible = "zmk,behavior-macro";
@@ -580,7 +575,6 @@ macros
                 = <&macro_press &kp LCTRL &kp LALT &kp DEL>
                 , <&macro_release &kp LCTRL &kp LALT &kp DEL>;
         };
-*/
 
 }; // end macro
 
@@ -598,7 +592,7 @@ keymap
 &kp PLUS   &kp N4       &kp N5    &kp N6      &kp C_PP   
 &kp MINUS  &kp N0       &trans    &kp DOT     &lt LAYER1 KP_ENTER   &lt LAYER2 SPACE
         >;
-        //sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
+        sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
     };
 
 
@@ -612,7 +606,7 @@ keymap
 &trans    &trans    &trans    &trans    &trans  
 &trans    &trans    &trans    &trans    &trans    &trans
         >;
-        //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
+        sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
     };
 
     layer2 
@@ -624,7 +618,7 @@ keymap
 &trans    &trans    &trans    &trans    &trans  
 &trans    &trans    &trans    &trans    &trans    &trans 
         >;
-        //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
+        sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
         }; //Layer2 end
 
     }; //Keymap End
