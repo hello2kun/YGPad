@@ -592,8 +592,8 @@ keymap
     default_layer
     {
         bindings = <
-&kp ESC    &kp KP_NUM
-&kp FSLH   &kp N7
+&kp ESC    &kp KP_NUM     &kp DEL 
+&kp FSLH   &kp N7         &kp N8
 /*
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
@@ -617,8 +617,8 @@ keymap
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 */
-&trans    &trans
-&trans    &trans
+&trans    &trans    &trans
+&trans    &trans    &trans
         >;
         //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
     };
@@ -633,8 +633,8 @@ keymap
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 */
-&trans    &trans
-&trans    &trans
+&trans    &trans    &trans
+&trans    &trans    &trans
         >;
         //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
         }; //Layer2 end
