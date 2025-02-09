@@ -258,6 +258,8 @@ behaviors {
 
 combos
 {
+
+/*
     compatible = "zmk,combos";
 
     combo_tab {
@@ -266,7 +268,6 @@ combos
     bindings = <&kp TAB>;
     };
 
-    /* 
     //Disable Combos
     combo_tilde {
     timeout-ms = <50>;
@@ -292,11 +293,11 @@ combos
     bindings = <&kp N3>;
     };
 
-        combo_4 {
-            timeout-ms = <50>;
-            key-positions = <4 16>;
-            bindings = <&kp N4>;
-            };
+    combo_4 {
+    timeout-ms = <50>;
+    key-positions = <4 16>;
+    bindings = <&kp N4>;
+    };
 
         combo_5 {
             timeout-ms = <50>;
@@ -429,12 +430,14 @@ combos
         key-positions = <36 38 54>;
         bindings = <&mcrTaskManager>;
         };
-    */
+*/
 
 }; //end combo
 
 macros
 {
+
+/*
     mcr00: mcr00
     {
         compatible = "zmk,behavior-macro";
@@ -577,6 +580,7 @@ macros
                 = <&macro_press &kp LCTRL &kp LALT &kp DEL>
                 , <&macro_release &kp LCTRL &kp LALT &kp DEL>;
         };
+*/
 
 }; // end macro
 
@@ -588,13 +592,13 @@ keymap
     default_layer
     {
         bindings = <
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans   // &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
+        //sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
     };
 
 
@@ -602,11 +606,11 @@ keymap
     layer1 
     {
         bindings = <
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans   // &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
         >;
         //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
     };
@@ -614,11 +618,11 @@ keymap
     layer2 
     {
         bindings = <
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans    //&trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
+//&trans    &trans    &trans    &trans    &trans    &trans    &trans
         >;
         //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
         }; //Layer2 end
