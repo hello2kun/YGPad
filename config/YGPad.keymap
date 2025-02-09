@@ -592,11 +592,15 @@ keymap
     default_layer
     {
         bindings = <
+&kp ESC    &kp KP_NUM
+&kp FSLH   &kp N7
+/*
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
+*/
         >;
         //sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
     };
@@ -606,11 +610,15 @@ keymap
     layer1 
     {
         bindings = <
+/*
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
+*/
+&trans    &trans
+&trans    &trans
         >;
         //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
     };
@@ -618,11 +626,15 @@ keymap
     layer2 
     {
         bindings = <
+/*
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans    &trans    &trans    &trans
+*/
+&trans    &trans
+&trans    &trans
         >;
         //sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
         }; //Layer2 end
