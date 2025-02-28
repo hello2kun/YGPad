@@ -15,7 +15,7 @@
 include:
   - board: nice_nano_v2
     shield: YGPad
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    #cmake-args: -DCONFIG_ZMK_STUDIO=y
     snippet: studio-rpc-usb-uart
 #YGTeeth56_ChocV2
 #YGTeeth55
