@@ -432,6 +432,10 @@ combos
         bindings = <&mcrTaskManager>;
         };
 */
+ combo_BootLoader {
+            timeout-ms = <50>;
+            key-positions = <0 3 12 18>;
+            bindings = <&bootloader>;
 
 }; //end combo
 
@@ -593,12 +597,12 @@ keymap
     {
         bindings = <
 &td12      &kp KP_NUM &kp DEL &kp BSPC  
-&td15      &td7       &td8    &td9    
-&td14      &td4       &td5    &td6     
-&kp ENTER  &td1       &td2    &td3  
-&kp COMMA  &kp DOT    &td0    &kp C_PP   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
+&td15      &td6       &td7    &td8    
+&td14      &td3       &td4    &td5     
+&kp ENTER  &td0       &td1    &td2  
+&kp COMMA  &kp DOT    &td9    &kp C_PP   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
         >;
-        sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
+        sensor-bindings = <&inc_dec_cp SCRL_DOWN SCRL_UP>;
     };
 
 
@@ -607,12 +611,12 @@ keymap
     {
         bindings = <
 &trans    &trans    &trans    &trans   
-&trans    &trans    &trans    &trans  
-&trans    &trans    &trans    &trans  
+&trans    &kp Q    &kp W    &kp E  
+&trans    &kp A    &kp S    &kp D  
 &trans    &trans    &trans    &trans   
 &trans    &trans    &trans    &trans    &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp SCRL_DOWN SCRL_UP>;
+        sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
     };
 
     layer2 
