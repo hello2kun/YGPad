@@ -605,7 +605,7 @@ keymap
 &kp ENTER  &td0       &td1    &td2  
 &kp COMMA  &kp DOT    &td9    &kp C_PP   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
         >;
-        sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
+        sensor-bindings = <&inc_dec_cp &msc SCRL_DOWN &msc SCRL_UP>;
     };
 
 
@@ -631,7 +631,7 @@ keymap
 &trans    &trans    &trans    &trans    
 &trans    &trans    &trans    &trans    &trans    &trans 
         >;
-        sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
+        sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
         }; //Layer2 end
 
     }; //Keymap End
