@@ -78,6 +78,7 @@ behaviors {
         };
     };
 
+/*
 behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -240,6 +241,7 @@ behaviors {
             bindings = <&kp EQUAL>, <&kp RPAR>;
             };
        };
+*/
 
 //------------------------------------Encoder
 
@@ -260,6 +262,7 @@ combos
 {
     compatible = "zmk,combos";
 
+/*
     combo_tab {
     timeout-ms = <50>;
     key-positions = <1 2>;
@@ -428,11 +431,13 @@ combos
         key-positions = <36 38 54>;
         bindings = <&mcrTaskManager>;
         };
+*/
 
 }; //end combo
 
 macros
 {
+/*
     mcr00: mcr00
     {
         compatible = "zmk,behavior-macro";
@@ -575,6 +580,7 @@ macros
                 = <&macro_press &kp LCTRL &kp LALT &kp DEL>
                 , <&macro_release &kp LCTRL &kp LALT &kp DEL>;
         };
+*/
 
 }; // end macro
 
