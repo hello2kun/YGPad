@@ -612,7 +612,7 @@ keymap
 &trans    &trans    &trans    &trans   
 &trans    &trans    &trans    &trans    &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp msc SCRL_DOWN msc SCRL_UP>;
+        sensor-bindings = <&inc_dec_cp SCRL_DOWN SCRL_UP>;
     };
 
     layer2 
