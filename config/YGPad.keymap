@@ -612,9 +612,9 @@ keymap
     layer1 
     {
         bindings = <
-&trans    &trans    &trans    &trans
-&trans    &kp Q    &kp W    &kp E  
-&trans    &kp A    &kp S    &kp D  
+&trans    &trans    &trans    &kp DEL
+&trans    &trans    &trans    &trans  
+&trans    &trans    &trans    &trans  
 &trans    &trans    &trans    &trans   
 &trans    &trans    &trans    &kp C_PP    &trans    &trans
         >;
