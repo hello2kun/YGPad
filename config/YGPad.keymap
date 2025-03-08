@@ -600,10 +600,10 @@ keymap
     {
         bindings = <
 &td12      &kp TAB    &kp DEL &kp BSPC  
-&td15      &td6       &td7    &td8    
-&td14      &td3       &td4    &td5     
-&kp ENTER  &td0       &td1    &td2  
-&kp COMMA  &kp DOT    &td9    &kp C_PP   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
+&td15      &td6       &td7    &td8
+&td14      &td3       &td4    &td5
+&kp ENTER  &td0       &td1    &td2
+&kp COMMA  &kp DOT    &td9    &kp C_MUTE   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
         >;
         sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
     };
@@ -612,11 +612,11 @@ keymap
     layer1 
     {
         bindings = <
-&trans    &trans    &trans    &trans   
+&trans    &trans    &trans    &trans
 &trans    &kp Q    &kp W    &kp E  
 &trans    &kp A    &kp S    &kp D  
 &trans    &trans    &trans    &trans   
-&trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &kp C_PP    &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
     };
