@@ -614,8 +614,8 @@ keymap
         bindings = <
 &trans    &trans    &trans    &kp DEL
 &trans    &trans    &trans    &trans  
+&trans    &kp LBKT  &trans    &kp RBKT  
 &trans    &trans    &trans    &trans  
-&trans    &trans    &trans    &trans   
 &trans    &trans    &trans    &kp C_PP    &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
