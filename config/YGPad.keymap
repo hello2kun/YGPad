@@ -78,7 +78,7 @@ behaviors {
         };
     };
 
-/*
+
 behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -241,7 +241,7 @@ behaviors {
             bindings = <&kp EQUAL>, <&kp RPAR>;
             };
        };
-*/
+
 
 //------------------------------------Encoder
 
@@ -592,13 +592,13 @@ keymap
     default_layer
     {
         bindings = <
-&kp ESC    &kp KP_NUM   &kp DEL   &kp BSPC  
-&kp FSLH   &kp N7       &kp N8    &kp N9    
-&kp STAR   &kp N4       &kp N5    &kp N6     
-&kp ENTER  &kp N4       &kp N5    &kp N6  
-&kp COMMA  &kp N0       &kp DOT   &kp C_PP   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
+&td12      &kp KP_NUM &kp DEL &kp BSPC  
+&td15      &td7       &td8    &td9    
+&td14      &td4       &td5    &td6     
+&kp ENTER  &td1       &td2    &td3  
+&kp COMMA  &kp DOT    &td0    &kp C_PP   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
         >;
-        sensor-bindings = <&inc_dec_cp C_VOL_UP C_VOL_DN>;
+        sensor-bindings = <&inc_dec_cp >;
     };
 
 
@@ -612,7 +612,7 @@ keymap
 &trans    &trans    &trans    &trans   
 &trans    &trans    &trans    &trans    &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
+        sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
     };
 
     layer2 
@@ -624,7 +624,7 @@ keymap
 &trans    &trans    &trans    &trans    
 &trans    &trans    &trans    &trans    &trans    &trans 
         >;
-        sensor-bindings = <&inc_dec_cp PG_UP PG_DN>;
+        sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
         }; //Layer2 end
 
     }; //Keymap End
