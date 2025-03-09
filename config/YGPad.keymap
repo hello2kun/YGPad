@@ -242,6 +242,14 @@ behaviors {
             };
        };
 
+behaviors {
+        tdDot: tap_dance_dot {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <220>;
+            bindings = <&kp DOT>, <&kp LPAR>;
+            };
+       };
 
 //------------------------------------Encoder
 
@@ -603,7 +611,7 @@ keymap
 &td15      &td6       &td7    &td8
 &td14      &td3       &td4    &td5
 &kp ENTER  &td0       &td1    &td2
-&kp COMMA  &kp DOT    &td9    &kp C_MUTE   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
+&kp COMMA  &tdDot     &td9    &kp C_MUTE   &lt LAYER1 LSHFT   &lt LAYER2 SPACE
         >;
         sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
     };
