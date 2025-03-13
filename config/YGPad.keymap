@@ -646,11 +646,11 @@ keymap
 layer2
     {
         bindings = <
-&kp ESC   &kp N1   &kp N2   &kp N3   
-&kp TAB   &kp Q    &kp W    &kp E 
-&kp F     &kp LEFT  &kp DOWN  &kp RIGHT
-&kp ENTER &kp Z    &kp X    &kp C    
-&trans    &trans   &mo 3    &trans    &kp LSHFT    &kp SPACE 
+&trans    &trans           &trans          &trans   
+&trans    &msc SCRL_DOWN   &mmv MOVE_UP    &msc SCRL_UP 
+&trans    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&kp ENTER &mkp LCLK        &mkp MCLK       &mkp RCLK
+&trans    &trans           &mo 3           &trans       &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
     }; 
