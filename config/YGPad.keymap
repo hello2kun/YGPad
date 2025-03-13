@@ -282,7 +282,7 @@ combos
     combo_TogGameMode {
         timeout-ms = <50>;
         key-positions = <0 3 18>;
-        bindings = <&tog 3>;
+        bindings = <&tog 4>;
     };
 
 
