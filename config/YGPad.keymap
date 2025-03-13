@@ -651,11 +651,11 @@ keymap
 layer3 
     {
         bindings = <
-&trans    &trans   &trans   &trans   
-&kp ESC   &kp N1   &kp N2   &kp N3 
-&kp TAB   &kp Q    &kp W    &kp E  
-&trans    &kp A    &kp S    &kp D    
-&trans    &trans   &trans   &trans    &kp LSHFT    &kp SPACE 
+&kp ESC   &kp N1   &kp N2   &kp N3   
+&kp TAB   &kp Q    &kp W    &kp E 
+&kp F     &kp A    &kp S    &kp D  
+&kp ENTER &kp Z    &kp X    &kp C    
+&trans    &trans   &mo 4    &trans    &kp LSHFT    &kp SPACE 
         >;
         sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
     }; 
@@ -664,8 +664,8 @@ layer4
     {
         bindings = <
 &trans    &trans    &trans    &trans   
-&trans    &trans    &trans    &trans 
-&trans    &trans    &trans    &trans  
+&trans    &trans    &kp UP    &trans 
+&trans    &kp LEFT  &kp DOWN  &kp RIGHT  
 &trans    &trans    &trans    &trans    
 &trans    &trans    &trans    &trans    &trans    &trans 
         >;
