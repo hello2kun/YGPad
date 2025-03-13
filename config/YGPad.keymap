@@ -641,8 +641,8 @@ keymap
         bindings = <
 &tog 3    &trans    &trans    &bt BT_CLR
 &trans    &trans    &trans    &trans 
-&trans    &setBT4   &setBT5   &out OUT_TOG
-&trans    &setBT1   &setBT2   &setBT3    
+&trans    &setBT3   &setBT4   &out OUT_TOG
+&trans    &setBT0   &setBT1   &setBT2    
 &trans    &trans    &trans    &trans    &trans    &trans 
         >;
         sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
