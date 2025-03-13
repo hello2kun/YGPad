@@ -642,31 +642,7 @@ keymap
         sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
     };
 
-    layer2 
-    {
-        bindings = <
-&bt BT_CLR &rgb_ug RGB_ON &rgb_ug RGB_OFF  &trans    
-&trans     &trans    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI 
-&trans     &setBT3   &setBT4   &out OUT_TOG
-&trans     &setBT0   &setBT1   &setBT2
-&trans     &trans    &trans    &trans    &trans    &trans 
-        >;
-        sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
-    };
-
-layer3 
-    {
-        bindings = <
-&kp ESC   &kp N1   &kp N2   &kp N3   
-&kp TAB   &kp Q    &kp W    &kp E 
-&kp F     &kp A    &kp S    &kp D  
-&kp ENTER &kp Z    &kp X    &kp C    
-&trans    &trans   &mo 4    &trans    &kp LSHFT    &kp SPACE 
-        >;
-        sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
-    }; 
-
-layer4 
+layer2
     {
         bindings = <
 &trans    &trans    &trans    &trans   
@@ -677,6 +653,30 @@ layer4
         >;
         sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
     }; 
+
+layer3 
+    {
+        bindings = <
+&kp ESC   &kp N1   &kp N2   &kp N3   
+&kp TAB   &kp Q    &kp W    &kp E 
+&kp F     &kp A    &kp S    &kp D  
+&kp ENTER &kp Z    &kp X    &kp C    
+&trans    &trans   &mo 2    &trans    &kp LSHFT    &kp SPACE 
+        >;
+        sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
+    }; 
+
+    layer4
+    {
+        bindings = <
+&bt BT_CLR &rgb_ug RGB_ON &rgb_ug RGB_OFF  &trans    
+&trans     &trans    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI 
+&trans     &setBT3   &setBT4   &out OUT_TOG
+&trans     &setBT0   &setBT1   &setBT2
+&trans     &trans    &trans    &trans    &trans    &trans 
+        >;
+        sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
+    };
 
     }; //Keymap End
 }; //All End
