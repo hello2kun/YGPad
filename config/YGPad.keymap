@@ -454,7 +454,6 @@ combos
 
 macros
 {
-/*
     mcr00: mcr00
     {
         compatible = "zmk,behavior-macro";
@@ -597,7 +596,6 @@ macros
                 = <&macro_press &kp LCTRL &kp LALT &kp DEL>
                 , <&macro_release &kp LCTRL &kp LALT &kp DEL>;
         };
-*/
 
 }; // end macro
 
@@ -641,10 +639,10 @@ keymap
     layer2 
     {
         bindings = <
-&tog 3    &trans    &trans    &trans   
+&tog 3    &trans    &trans    &bt BT_CLR
 &trans    &trans    &trans    &trans 
-&trans    &trans    &trans    &trans  
-&trans    &trans    &trans    &trans    
+&trans    &setBT4   &setBT5   &out OUT_TOG
+&trans    &setBT1   &setBT2   &setBT3    
 &trans    &trans    &trans    &trans    &trans    &trans 
         >;
         sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
@@ -653,11 +651,11 @@ keymap
 layer3 
     {
         bindings = <
-&    &trans    &trans    &trans   
-&kp ESC    &kp N1   &kp N2    &kp N3 
-&kp TAB    &kp Q    &kp W    &kp E  
+&trans    &trans   &trans   &trans   
+&kp ESC   &kp N1   &kp N2   &kp N3 
+&kp TAB   &kp Q    &kp W    &kp E  
 &trans    &kp A    &kp S    &kp D    
-&trans    &trans    &trans    &trans    &kp LSHFT    &kp SPACE 
+&trans    &trans   &trans   &trans    &kp LSHFT    &kp SPACE 
         >;
         sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
         }; //Layer2 end
@@ -665,7 +663,7 @@ layer3
 layer4 
     {
         bindings = <
-&    &trans    &trans    &trans   
+&trans    &trans    &trans    &trans   
 &trans    &trans    &trans    &trans 
 &trans    &trans    &trans    &trans  
 &trans    &trans    &trans    &trans    
