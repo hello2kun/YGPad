@@ -256,6 +256,15 @@ behaviors {
 
 //------------------------------------Encoder
 
+behaviors {
+    scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+	    compatible = "zmk,behavior-sensor-rotate";
+	    #sensor-binding-cells = <0>;
+        #define ZMK_MOUSE_SCRL_VAL 140
+        tap-ms = <20>;
+        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+};
+
 /*
 behaviors {
     encoder_kp : sensor_rotate_kp
@@ -604,22 +613,6 @@ macros
                 , <&macro_release &kp LCTRL &kp LALT &kp DEL>;
         };
 
-        mscUp: mscUp
-        {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&msc SCRL_UP>;
-        };
-
-        mscDown: mscDown
-        {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&msc SCRL_DOWN>;
-        };
-
 }; // end macro
 
 
@@ -639,7 +632,7 @@ keymap
 &kp ENTER      &kp N1     &kp N2   &kp N3
 &lt LAYER2 N0  &kp N0     &kp DOT  &kp C_MUTE   &lt LAYER1 ENTER   &lt LAYER2 SPACE
 >;
-        sensor-bindings = <&inc_dec_cp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
+        sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
     };
 
 
