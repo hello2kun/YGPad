@@ -636,8 +636,8 @@ keymap
 &kp ENTER      &kp N1     &kp N2   &kp N3
 &lt LAYER2 N0  &kp N0     &kp DOT  &kp C_MUTE   &lt LAYER1 ENTER   &lt LAYER2 SPACE
 >;
-        //sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
-	sensor-bindings = <&scrollWheel>;
+        sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
+	//sensor-bindings = <&scrollWheel>;
     };
 
 
