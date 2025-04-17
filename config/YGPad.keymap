@@ -20,7 +20,7 @@ pin matrix changed
 
 //#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
 //#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
-#define ZMK_MOUSE_SCRL_VAL 140
+#define ZMK_MOUSE_SCRL_VAL 150
 
 / {
 
@@ -260,8 +260,8 @@ behaviors {
 behaviors {
 	scrollWheel: scrollWheel {
 		compatible = "zmk,behavior-sensor-rotate";
-		#sensor-binding-cells = <2>;
-        	tap-ms = <20>;
+		#sensor-binding-cells = <0>;
+        	tap-ms = <30>;
         	bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 		};
 	};
