@@ -24,7 +24,7 @@ pin matrix changed
 
 
 / {
-/*
+
     behaviors
     {
         lt: layer_tap 
@@ -32,11 +32,11 @@ pin matrix changed
             compatible = "zmk,behavior-hold-tap";
 	    tapping-term-ms = <200>;
             //quick-tap-ms = <185>;
-            flavor = "balanced";
+            flavor = "hold-preferred"; 
         };
     };
-*/
 
+/*
    behaviors {
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -47,6 +47,7 @@ pin matrix changed
             display-name = "Layer-Tap";
         };
     };
+*/
 
     behaviors
     {
