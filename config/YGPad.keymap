@@ -18,9 +18,10 @@ pin matrix changed
 #define GAMEMODE 4
 #define LAYER5 5
 
+//#define ZMK_MOUSE_SCRL_VAL 120
 //#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 120
-//#define ZMK_MOUSE_SCRL_VAL 50
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 50
+
 
 / {
 
