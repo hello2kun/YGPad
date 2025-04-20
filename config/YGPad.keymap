@@ -30,7 +30,8 @@ pin matrix changed
         lt: layer_tap 
         {
             compatible = "zmk,behavior-hold-tap";
-            quick-tap-ms = <185>;
+	    tapping-term-ms = <200>;
+            //quick-tap-ms = <185>;
             flavor = "balanced";
         };
     };
