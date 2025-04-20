@@ -19,8 +19,8 @@ pin matrix changed
 #define LAYER5 5
 
 //#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
-//#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
-#define ZMK_MOUSE_SCRL_VAL 120
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 120
+//#define ZMK_MOUSE_SCRL_VAL 120
 
 / {
 
@@ -261,9 +261,9 @@ behaviors {
 	scrollWheel: scrollWheel {
 		compatible = "zmk,behavior-sensor-rotate";
 		#sensor-binding-cells = <0>;
-        	tap-ms = <50>;
-        	//bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-		bindings = <&kp PG_DN>, <&kp PG_UP>;
+        	tap-ms = <20>;
+        	bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+		//bindings = <&kp PG_DN>, <&kp PG_UP>;
 		};
 	};
 
