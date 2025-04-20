@@ -700,7 +700,7 @@ gamemode
 &kp ENTER &kp Z    &kp X    &kp C    
 &mo 5    &kp G   &kp R    &trans    &kp LSHFT    &kp SPACE 
         >;
-        sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
+        sensor-bindings = <&scrollWheel>;
     }; 
 
 layer5
@@ -712,7 +712,7 @@ layer5
 &trans    &trans    &trans    &trans    
 &trans    &trans    &trans    &trans    &trans    &trans 
         >;
-        sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
+        sensor-bindings = <&scrollWheel>;
     }; 
 
     }; //Keymap End
