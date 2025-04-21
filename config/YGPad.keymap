@@ -576,6 +576,30 @@ macros
                 = <&macro_tap &kp N0 &kp N8 &kp N1 &kp N6 &kp N8 &kp N1>;
         };
 
+	mcr1k: mcr1k
+        {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp N1 &kp N0 &kp N2 &kp N4>;
+        };
+
+	mcr2k: mcr2k
+        {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp N2 &kp N0 &kp N4 &kp N8>;
+        };
+
+	mcr4k: mcr4k
+        {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp N4 &kp N0 &kp N9 &kp N6>;
+        };
+
         setBT0: setBT0
         {
             compatible = "zmk,behavior-macro";
@@ -660,7 +684,7 @@ keymap
 &trans    &trans    &trans    &kp DEL
 &trans    &trans    &trans    &trans  
 &trans    &kp LBKT  &trans    &kp RBKT
-&trans    &trans    &trans    &trans  
+&trans    &mcr1k    &mcr2k    &mcr4k  
 &trans    &trans    &trans    &kp C_PP    &trans    &trans
         >;
         //sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
