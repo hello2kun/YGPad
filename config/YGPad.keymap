@@ -671,6 +671,7 @@ keymap
 &td14          &kp N4     &kp N5   &kp N6
 &kp ENTER      &kp N1     &kp N2   &kp N3
 &lt LAYER2 N0  &kp N0     &kp DOT  &mkp MCLK   &lt LAYER1 ENTER   &lt LAYER2 SPACE
+&studio_unlock 
 >;
         //sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
 	sensor-bindings = <&scrollWheel>;
@@ -685,6 +686,7 @@ keymap
 &trans    &kp LBKT  &trans    &kp RBKT
 &trans    &mcr1k    &mcr2k    &mcr4k  
 &trans    &trans    &trans    &kp C_PP    &trans    &trans
+&studio_unlock 
         >;
         //sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
 	sensor-bindings = <&encVol>;
@@ -698,6 +700,7 @@ layer2
 &trans    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
 &kp ENTER &mkp LCLK        &mkp MCLK       &mkp RCLK
 &trans    &trans           &mo 3           &trans       &trans    &trans
+&studio_unlock 
         >;
         sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
     }; 
@@ -709,7 +712,8 @@ layer3
 &trans     &trans    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI 
 &trans     &setBT3   &setBT4   &out OUT_TOG
 &trans     &setBT0   &setBT1   &setBT2
-&trans     &trans    &trans    &trans    &trans    &trans 
+&trans     &trans    &trans    &trans    &trans    &trans
+&studio_unlock 
         >;
         sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
     };
@@ -721,7 +725,8 @@ gamemode
 &kp TAB   &kp Q    &kp W    &kp E 
 &kp F     &kp A    &kp S    &kp D  
 &kp ENTER &kp Z    &kp X    &kp C    
-&mo 5    &kp G   &kp R    &trans    &kp LSHFT    &kp SPACE 
+&mo 5    &kp G   &kp R    &trans    &kp LSHFT    &kp SPACE
+&studio_unlock 
         >;
         sensor-bindings = <&scrollWheel>;
     }; 
@@ -733,7 +738,8 @@ layer5
 &trans    &trans    &kp UP    &trans 
 &trans    &kp LEFT  &kp DOWN  &kp RIGHT  
 &trans    &trans    &trans    &trans    
-&trans    &trans    &trans    &trans    &trans    &trans 
+&trans    &trans    &trans    &trans    &trans    &trans
+&studio_unlock 
         >;
         sensor-bindings = <&scrollWheel>;
     }; 
