@@ -710,7 +710,6 @@ layer3
 &trans     &setBT3   &setBT4   &out OUT_TOG
 &trans     &setBT0   &setBT1   &setBT2
 &trans     &trans    &trans    &trans    &trans    &trans
-&studio_unlock 
         >;
         sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
     };
@@ -723,7 +722,6 @@ gamemode
 &kp F     &kp A    &kp S    &kp D  
 &kp ENTER &kp Z    &kp X    &kp C    
 &mo 5    &kp G   &kp R    &trans    &kp LSHFT    &kp SPACE
-&studio_unlock 
         >;
         sensor-bindings = <&scrollWheel>;
     }; 
@@ -736,7 +734,6 @@ layer5
 &trans    &kp LEFT  &kp DOWN  &kp RIGHT  
 &trans    &trans    &trans    &trans    
 &trans    &trans    &trans    &trans    &trans    &trans
-&studio_unlock 
         >;
         sensor-bindings = <&scrollWheel>;
     }; 
