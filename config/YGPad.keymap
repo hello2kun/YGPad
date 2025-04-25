@@ -670,8 +670,7 @@ keymap
 &td15          &kp N7     &kp N8   &kp N9
 &td14          &kp N4     &kp N5   &kp N6
 &kp ENTER      &kp N1     &kp N2   &kp N3
-&lt LAYER2 N0  &kp N0     &kp DOT  &mkp MCLK   &lt LAYER1 ENTER   &lt LAYER2 SPACE
-&studio_unlock 
+&mo 3	       &kp N0     &kp DOT  &mkp MCLK   &lt LAYER1 ENTER   &lt LAYER2 SPACE
 >;
         //sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
 	sensor-bindings = <&scrollWheel>;
@@ -686,7 +685,6 @@ keymap
 &trans    &kp LBKT  &trans    &kp RBKT
 &trans    &mcr1k    &mcr2k    &mcr4k  
 &trans    &trans    &trans    &kp C_PP    &trans    &trans
-&studio_unlock 
         >;
         //sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
 	sensor-bindings = <&encVol>;
@@ -695,12 +693,11 @@ keymap
 layer2
     {
         bindings = <
-&trans    &trans           &trans          &trans   
-&trans    &msc SCRL_DOWN   &mmv MOVE_UP    &msc SCRL_UP 
-&trans    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&kp ENTER &mkp LCLK        &mkp MCLK       &mkp RCLK
-&trans    &trans           &mo 3           &trans       &trans    &trans
-&studio_unlock 
+&trans		&trans           &trans          &trans   
+&trans    	&msc SCRL_DOWN   &mmv MOVE_UP    &msc SCRL_UP 
+&trans    	&mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&kp ENTER 	&mkp LCLK        &mkp MCLK       &mkp RCLK
+&trans    	&trans           &mo 3           &trans       &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
     }; 
@@ -708,7 +705,7 @@ layer2
 layer3
     {
         bindings = <
-&bt BT_CLR &rgb_ug RGB_ON &rgb_ug RGB_OFF  &trans    
+&bt BT_CLR &rgb_ug RGB_ON &rgb_ug RGB_OFF  &studio_unlock  
 &trans     &trans    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI 
 &trans     &setBT3   &setBT4   &out OUT_TOG
 &trans     &setBT0   &setBT1   &setBT2
