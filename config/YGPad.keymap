@@ -24,7 +24,6 @@ pin matrix changed
 
 
 / {
-
     behaviors
     {
         lt: layer_tap 
