@@ -699,7 +699,7 @@ layer2
 &kp ENTER 	&mkp LCLK        &mkp MCLK       &mkp RCLK
 &trans    	&trans           &mo 3           &trans       &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
+        sensor-bindings = <&inc_dec_cp LBKT RBKT>;
     }; 
 
 layer3
@@ -711,7 +711,7 @@ layer3
 &trans     &setBT0   &setBT1   &setBT2
 &trans     &trans    &trans    &trans    &trans    &trans
         >;
-        sensor-bindings = <&inc_dec_cp C_BRI_DN C_BRI_UP>;
+        sensor-bindings = <&scrollWheel>;
     };
 
 gamemode
