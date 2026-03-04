@@ -277,7 +277,6 @@ behaviors {
 		#sensor-binding-cells = <0>;
         	tap-ms = <20>;
         	bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-		//bindings = <&kp PG_DN>, <&kp PG_UP>;
 		};
 	};
 
