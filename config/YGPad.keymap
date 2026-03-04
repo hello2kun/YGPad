@@ -312,173 +312,173 @@ combos
 
 /*
     combo_tab {
-    timeout-ms = <50>;
-    key-positions = <1 2>;
-    bindings = <&kp TAB>;
+    	timeout-ms = <50>;
+    	key-positions = <1 2>;
+    	bindings = <&kp TAB>;
     };
 
     //Disable Combos
-    combo_tilde {
-    timeout-ms = <50>;
-    key-positions = <0 1>;
-    bindings = <&kp TILDE>;
+    	combo_tilde {
+    	timeout-ms = <50>;
+    	key-positions = <0 1>;
+    	bindings = <&kp TILDE>;
     };
 
     combo_1 {
-    timeout-ms = <50>;
-    key-positions = <1 13>;
-    bindings = <&kp N1>;
+    	timeout-ms = <50>;
+    	key-positions = <1 13>;
+    	bindings = <&kp N1>;
     };
 
     combo_2 {
-    timeout-ms = <50>;
-    key-positions = <2 14>;
-    bindings = <&kp N2>;
+    	timeout-ms = <50>;
+    	key-positions = <2 14>;
+    	bindings = <&kp N2>;
     };
 
     combo_3 {
-    timeout-ms = <50>;
-    key-positions = <3 15>;
-    bindings = <&kp N3>;
+    	timeout-ms = <50>;
+    	key-positions = <3 15>;
+    	bindings = <&kp N3>;
     };
 
     combo_4 {
-    timeout-ms = <50>;
-    key-positions = <4 16>;
-    bindings = <&kp N4>;
+    	timeout-ms = <50>;
+    	key-positions = <4 16>;
+    	bindings = <&kp N4>;
     };
 
     combo_5 {
-            timeout-ms = <50>;
-            key-positions = <5 17>;
-            bindings = <&kp N5>;
-            };
-
-        combo_6 {
-            timeout-ms = <50>;
-            key-positions = <6 18>;
-            bindings = <&kp N6>;
-            };
-
-        combo_7 {
-            timeout-ms = <50>;
-            key-positions = <7 19>;
-            bindings = <&kp N7>;
-            };
-
-        combo_8 {
-            timeout-ms = <50>;
-            key-positions = <8 20>;
-            bindings = <&kp N8>;
-            };
-
-        combo_9 {
-            timeout-ms = <50>;
-            key-positions = <9 21>;
-            bindings = <&kp N9>;
-            };
-
-        combo_10 {
-            timeout-ms = <50>;
-            key-positions = <10 22>;
-            bindings = <&kp N0>;
-            };
-
-         combo_11 {
-            timeout-ms = <50>;
-            key-positions = <11 23>;
-            bindings = <&kp MINUS>;
-            };
-
-        combo_12 {
-            timeout-ms = <50>;
-            key-positions = <53 55>;
-            bindings = <&kp EQUAL>;
-            };
-
-        combo_exc {
-            timeout-ms = <50>;
-            key-positions = <13 25>;
-            bindings = <&kp EXCL>;
-            };
-
-        combo_at {
-            timeout-ms = <50>;
-            key-positions = <14 26>;
-            bindings = <&kp AT>;
-            };
-
-       combo_hash {
-            timeout-ms = <50>;
-            key-positions = <15 27>;
-            bindings = <&kp HASH>;
-            };
-
-        combo_dllr {
-            timeout-ms = <50>;
-            key-positions = <16 28>;
-            bindings = <&kp DLLR>;
-            };
-
-        combo_prcnt {
-            timeout-ms = <50>;
-            key-positions = <17 29>;
-            bindings = <&kp PRCNT>;
-            };
-
-        combo_caret {
-            timeout-ms = <50>;
-            key-positions = <18 30>;
-            bindings = <&kp CARET>;
-            };
-
-        combo_amps {
-            timeout-ms = <50>;
-            key-positions = <19 31>;
-            bindings = <&kp AMPS>;
-            };
-
-        combo_star {
-            timeout-ms = <50>;
-            key-positions = <20 32>;
-            bindings = <&kp STAR>;
-            };
-
-        combo_lpar {
-            timeout-ms = <50>;
-            key-positions = <21 33>;
-            bindings = <&kp LPAR>;
-            };
-
-        combo_rpar {
-            timeout-ms = <50>;
-            key-positions = <22 34>;
-            bindings = <&kp RPAR>;
-            };
-
-        combo_minus {
-            timeout-ms = <50>;
-            key-positions = <23 35>;
-            bindings = <&kp UNDER>;
-            };
-
-        combo_equal {
-            timeout-ms = <50>;
-            key-positions = <52 53>;
-            bindings = <&kp PLUS>;
-            };
-
-        combo_equal2 {
-            timeout-ms = <50>;
-            key-positions = <42 43>;
-            bindings = <&kp EQUAL>;
-            };
-
-        combo_TaskManager {
         timeout-ms = <50>;
-        key-positions = <36 38 54>;
-        bindings = <&mcrTaskManager>;
+        key-positions = <5 17>;
+        bindings = <&kp N5>;
+    };
+
+    combo_6 {
+        timeout-ms = <50>;
+        key-positions = <6 18>;
+        bindings = <&kp N6>;
+    };
+
+    combo_7 {
+    	timeout-ms = <50>;
+        key-positions = <7 19>;
+        bindings = <&kp N7>;
+    };
+
+    combo_8 {
+        timeout-ms = <50>;
+        key-positions = <8 20>;
+        bindings = <&kp N8>;
+    };
+
+    combo_9 {
+        timeout-ms = <50>;
+        key-positions = <9 21>;
+        bindings = <&kp N9>;
+    };
+
+    combo_10 {
+    	timeout-ms = <50>;
+        key-positions = <10 22>;
+        bindings = <&kp N0>;
+    };
+
+    combo_11 {
+        timeout-ms = <50>;
+        key-positions = <11 23>;
+        bindings = <&kp MINUS>;
+    };
+
+    combo_12 {
+        timeout-ms = <50>;
+        key-positions = <53 55>;
+        bindings = <&kp EQUAL>;
+    };
+
+    combo_exc {
+        timeout-ms = <50>;
+        key-positions = <13 25>;
+        bindings = <&kp EXCL>;
+    };
+
+    combo_at {
+        timeout-ms = <50>;
+        key-positions = <14 26>;
+        bindings = <&kp AT>;
+    };
+
+    combo_hash {
+        timeout-ms = <50>;
+        key-positions = <15 27>;
+        bindings = <&kp HASH>;
+    };
+
+    combo_dllr {
+        timeout-ms = <50>;
+        key-positions = <16 28>;
+        bindings = <&kp DLLR>;
+    };
+
+    combo_prcnt {
+    	timeout-ms = <50>;
+        key-positions = <17 29>;
+        bindings = <&kp PRCNT>;
         };
+
+    combo_caret {
+        timeout-ms = <50>;
+        key-positions = <18 30>;
+        bindings = <&kp CARET>;
+        };
+
+    combo_amps {
+        timeout-ms = <50>;
+        key-positions = <19 31>;
+        bindings = <&kp AMPS>;
+    };
+
+    combo_star {
+        timeout-ms = <50>;
+        key-positions = <20 32>;
+        bindings = <&kp STAR>;
+    };
+
+    combo_lpar {
+        timeout-ms = <50>;
+        key-positions = <21 33>;
+        bindings = <&kp LPAR>;
+    };
+
+    combo_rpar {
+        timeout-ms = <50>;
+        key-positions = <22 34>;
+        bindings = <&kp RPAR>;
+    };
+
+    combo_minus {
+        timeout-ms = <50>;
+        key-positions = <23 35>;
+        bindings = <&kp UNDER>;
+    };
+
+    combo_equal {
+        timeout-ms = <50>;
+        key-positions = <52 53>;
+        bindings = <&kp PLUS>;
+    };
+
+    combo_equal2 {
+        timeout-ms = <50>;
+        key-positions = <42 43>;
+        bindings = <&kp EQUAL>;
+    };
+
+    combo_TaskManager {
+    	timeout-ms = <50>;
+    	key-positions = <36 38 54>;
+    	bindings = <&mcrTaskManager>;
+    };
 */
 
 }; //end combo
@@ -662,77 +662,71 @@ keymap
     default_layer
     {
         bindings = <
-/*
-&tdDot  &kp C_MUTE  &bhmQck LSHFT ENTER &lt LAYER1 SPACE    //&lt LAYER1 ENTER   
-*/
-&td12          &kp TAB    &kp DEL  &kp BSPC  
-&td15          &kp N7     &kp N8   &kp N9
-&td14          &kp N4     &kp N5   &kp N6
-&kp ENTER      &kp N1     &kp N2   &kp N3
-&mo 3	       &kp DOT    &kp N0   &mkp MCLK   &lt LAYER1 ENTER   &lt LAYER2 SPACE
->;
-        //sensor-bindings = <&inc_dec_cp PG_DN PG_UP>;
-	sensor-bindings = <&scrollWheel>;
+		&td12          &kp TAB    &kp DEL  &kp BSPC  
+		&td15          &kp N7     &kp N8   &kp N9
+		&td14          &kp N4     &kp N5   &kp N6
+		&kp ENTER      &kp N1     &kp N2   &kp N3
+		&mo 3	       &kp DOT    &kp N0   &mkp MCLK   &lt LAYER1 ENTER   &lt LAYER2 SPACE
+		>;
+		sensor-bindings = <&scrollWheel>;
     };
-
 
     layer1 
     {
         bindings = <
-&trans    &trans    &trans    &kp DEL
-&kp STAR  &trans    &trans    &trans  
-&kp FSLH  &kp LBKT  &trans    &kp RBKT
-&trans    &mcr1k    &mcr2k    &mcr4k
-&trans    &trans    &trans    &kp C_PP    &trans    &trans
+		&trans    &trans    &trans    &kp DEL
+		&kp STAR  &trans    &trans    &trans  
+		&kp FSLH  &kp LBKT  &trans    &kp RBKT
+		&trans    &mcr1k    &mcr2k    &mcr4k
+		&trans    &trans    &trans    &kp C_PP    &trans    &trans
         >;
-        //sensor-bindings = <&inc_dec_cp C_VOL_DN C_VOL_UP>;
-	sensor-bindings = <&encVol>;
+		sensor-bindings = <&encVol>;
     };
 
-layer2
+	layer2
     {
         bindings = <
-&trans		&trans           &trans          &trans   
-&trans    	&msc SCRL_DOWN   &mmv MOVE_UP    &msc SCRL_UP 
-&trans    	&mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&kp ENTER 	&mkp LCLK        &mkp MCLK       &mkp RCLK
-&trans    	&trans           &mo 3           &trans       &trans    &trans
+		&trans		&trans           &trans          &trans   
+		&trans    	&msc SCRL_DOWN   &mmv MOVE_UP    &msc SCRL_UP 
+		&trans    	&mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+		&kp ENTER 	&mkp LCLK        &mkp MCLK       &mkp RCLK
+		&trans    	&trans           &mo 3           &trans       &trans    &trans
         >;
         sensor-bindings = <&inc_dec_cp LBKT RBKT>;
     }; 
 
-layer3
+	layer3
     {
         bindings = <
-&bt BT_CLR &rgb_ug RGB_ON &rgb_ug RGB_OFF  &studio_unlock  
-&trans     &trans    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI 
-&trans     &setBT3   &setBT4   &out OUT_TOG
-&trans     &setBT0   &setBT1   &setBT2
-&trans     &trans    &trans    &trans    &trans    &trans
+		&bt BT_CLR &rgb_ug RGB_ON &rgb_ug RGB_OFF  &studio_unlock  
+		&trans     &trans    &rgb_ug RGB_BRD  &rgb_ug RGB_BRI 
+		&trans     &setBT3   &setBT4   &out OUT_TOG
+		&trans     &setBT0   &setBT1   &setBT2
+		&trans     &trans    &trans    &trans    &trans    &trans
         >;
         sensor-bindings = <&scrollWheel>;
     };
 
-gamemode
+	gamemode
     {
         bindings = <
-&kp ESC   &kp N1   &kp N2   &kp N3   
-&kp TAB   &kp Q    &kp W    &kp E 
-&kp F     &kp A    &kp S    &kp D  
-&kp ENTER &kp Z    &kp X    &kp C    
-&mo 5    &kp G   &kp R    &trans    &kp LSHFT    &kp SPACE
+		&kp ESC   &kp N1   &kp N2   &kp N3   
+		&kp TAB   &kp Q    &kp W    &kp E 
+		&kp F     &kp A    &kp S    &kp D  
+		&kp ENTER &kp Z    &kp X    &kp C    
+		&mo 5    &kp G   &kp R    &trans    &kp LSHFT    &kp SPACE
         >;
         sensor-bindings = <&scrollWheel>;
     }; 
 
-layer5
+	layer5
     {
         bindings = <
-&trans    &trans    &trans    &trans   
-&trans    &trans    &kp UP    &trans 
-&trans    &kp LEFT  &kp DOWN  &kp RIGHT  
-&trans    &trans    &trans    &trans    
-&trans    &trans    &trans    &trans    &trans    &trans
+		&trans    &trans    &trans    &trans   
+		&trans    &trans    &kp UP    &trans 
+		&trans    &kp LEFT  &kp DOWN  &kp RIGHT  
+		&trans    &trans    &trans    &trans    
+		&trans    &trans    &trans    &trans    &trans    &trans
         >;
         sensor-bindings = <&scrollWheel>;
     }; 
