@@ -8,7 +8,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3-ygpad
+      revision: v0.3
       import: app/west.yml
   self:
     path: config
