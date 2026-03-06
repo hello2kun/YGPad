@@ -19,7 +19,7 @@
         {
                 zmk,kscan = &kscan0;
                 //zmk,matrix_transform = &default_transform;
-                zmk,underglow = &led_strip;  // 이 줄을 추가하세요!
+                //zmk,underglow = &led_strip;  // 이 줄을 추가하세요!
                 zmk,physical-layout = &ygpad_layout; //zmk studio 기본 레이아웃 지정
         };
 
@@ -79,6 +79,7 @@
                 >;
         };
 };
+
 
 
 
