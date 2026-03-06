@@ -5,7 +5,8 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <layouts/YG/YGPad_layouts.dtsi>
+//#include <layouts/YG/YGPad_layouts.dtsi>
+#include "../../../layouts/YG/YGPad_layouts.dtsi"
 
 //zmk studio 기본 매트릭스 지정
 &ygpad_layout {
@@ -76,6 +77,7 @@
                 >;
         };
 };
+
 
 
 
